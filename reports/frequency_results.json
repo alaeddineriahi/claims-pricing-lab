@@ -1,0 +1,209 @@
+{
+  "Null (portfolio average)": {
+    "poisson_deviance_x100": 62.5726,
+    "lorenz_gini": 0.0,
+    "predicted_claims": 7208.2,
+    "actual_claims": 7174
+  },
+  "Poisson GLM": {
+    "poisson_deviance_x100": 59.5204,
+    "lorenz_gini": 0.2809,
+    "predicted_claims": 7202.1,
+    "actual_claims": 7174
+  },
+  "LightGBM (Poisson)": {
+    "poisson_deviance_x100": 57.6071,
+    "lorenz_gini": 0.3344,
+    "predicted_claims": 7219.7,
+    "actual_claims": 7174
+  },
+  "lgbm_minus_glm_deviance_x100": [
+    -1.9133,
+    -2.1033,
+    -1.7323
+  ],
+  "calibration_deciles": {
+    "Poisson GLM": [
+      {
+        "decile": 1,
+        "exposure": 8327.82827,
+        "actual": 409,
+        "predicted": 435.96759,
+        "actual_rate": 0.04911,
+        "predicted_rate": 0.05235
+      },
+      {
+        "decile": 2,
+        "exposure": 8242.53035,
+        "actual": 478,
+        "predicted": 519.36491,
+        "actual_rate": 0.05799,
+        "predicted_rate": 0.06301
+      },
+      {
+        "decile": 3,
+        "exposure": 8022.48215,
+        "actual": 549,
+        "predicted": 558.89674,
+        "actual_rate": 0.06843,
+        "predicted_rate": 0.06967
+      },
+      {
+        "decile": 4,
+        "exposure": 7807.40909,
+        "actual": 582,
+        "predicted": 589.93296,
+        "actual_rate": 0.07454,
+        "predicted_rate": 0.07556
+      },
+      {
+        "decile": 5,
+        "exposure": 7846.70055,
+        "actual": 644,
+        "predicted": 640.1325,
+        "actual_rate": 0.08207,
+        "predicted_rate": 0.08158
+      },
+      {
+        "decile": 6,
+        "exposure": 7653.15041,
+        "actual": 713,
+        "predicted": 676.10862,
+        "actual_rate": 0.09316,
+        "predicted_rate": 0.08834
+      },
+      {
+        "decile": 7,
+        "exposure": 7344.10939,
+        "actual": 711,
+        "predicted": 714.34676,
+        "actual_rate": 0.09681,
+        "predicted_rate": 0.09727
+      },
+      {
+        "decile": 8,
+        "exposure": 6446.80327,
+        "actual": 806,
+        "predicted": 744.69192,
+        "actual_rate": 0.12502,
+        "predicted_rate": 0.11551
+      },
+      {
+        "decile": 9,
+        "exposure": 5564.99524,
+        "actual": 905,
+        "predicted": 937.93695,
+        "actual_rate": 0.16262,
+        "predicted_rate": 0.16854
+      },
+      {
+        "decile": 10,
+        "exposure": 4364.56051,
+        "actual": 1377,
+        "predicted": 1384.69223,
+        "actual_rate": 0.3155,
+        "predicted_rate": 0.31726
+      }
+    ],
+    "LightGBM (Poisson)": [
+      {
+        "decile": 1,
+        "exposure": 8561.49836,
+        "actual": 319,
+        "predicted": 349.73019,
+        "actual_rate": 0.03726,
+        "predicted_rate": 0.04085
+      },
+      {
+        "decile": 2,
+        "exposure": 7850.47938,
+        "actual": 442,
+        "predicted": 435.26526,
+        "actual_rate": 0.0563,
+        "predicted_rate": 0.05544
+      },
+      {
+        "decile": 3,
+        "exposure": 7603.16742,
+        "actual": 457,
+        "predicted": 490.57431,
+        "actual_rate": 0.06011,
+        "predicted_rate": 0.06452
+      },
+      {
+        "decile": 4,
+        "exposure": 7780.07949,
+        "actual": 557,
+        "predicted": 566.89945,
+        "actual_rate": 0.07159,
+        "predicted_rate": 0.07287
+      },
+      {
+        "decile": 5,
+        "exposure": 7736.544,
+        "actual": 629,
+        "predicted": 624.07803,
+        "actual_rate": 0.0813,
+        "predicted_rate": 0.08067
+      },
+      {
+        "decile": 6,
+        "exposure": 7686.52707,
+        "actual": 629,
+        "predicted": 680.42922,
+        "actual_rate": 0.08183,
+        "predicted_rate": 0.08852
+      },
+      {
+        "decile": 7,
+        "exposure": 7235.41674,
+        "actual": 726,
+        "predicted": 708.08231,
+        "actual_rate": 0.10034,
+        "predicted_rate": 0.09786
+      },
+      {
+        "decile": 8,
+        "exposure": 6336.13987,
+        "actual": 715,
+        "predicted": 723.59365,
+        "actual_rate": 0.11284,
+        "predicted_rate": 0.1142
+      },
+      {
+        "decile": 9,
+        "exposure": 5861.25052,
+        "actual": 952,
+        "predicted": 893.11669,
+        "actual_rate": 0.16242,
+        "predicted_rate": 0.15238
+      },
+      {
+        "decile": 10,
+        "exposure": 4969.46637,
+        "actual": 1748,
+        "predicted": 1747.92124,
+        "actual_rate": 0.35175,
+        "predicted_rate": 0.35173
+      }
+    ]
+  },
+  "_meta": {
+    "n_test": 136072,
+    "test_exposure": 71620.6,
+    "lgbm_params": {
+      "objective": "poisson",
+      "learning_rate": 0.05,
+      "num_leaves": 63,
+      "min_data_in_leaf": 1000,
+      "feature_fraction": 0.8,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 1,
+      "lambda_l2": 1.0,
+      "verbosity": -1,
+      "seed": 42,
+      "num_threads": 8
+    },
+    "lgbm_iterations": 320
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "Null (average claim)": {
+    "gamma_deviance": 1.14789,
+    "mean_predicted": 1687.3,
+    "mean_actual": 1702.4
+  },
+  "Gamma GLM": {
+    "gamma_deviance": 1.15677,
+    "mean_predicted": 1678.8,
+    "mean_actual": 1702.4,
+    "deviance_explained_vs_null": -0.0077
+  },
+  "LightGBM (Gamma)": {
+    "gamma_deviance": 1.15505,
+    "mean_predicted": 1653.3,
+    "mean_actual": 1702.4,
+    "deviance_explained_vs_null": -0.0062
+  },
+  "_meta": {
+    "lgbm_iterations": 91,
+    "mean_severity_train": 1687.3,
+    "valid_gamma_deviance": {
+      "Null (average claim)": 1.11012,
+      "Gamma GLM": 1.09609,
+      "LightGBM (Gamma)": 1.09036
+    },
+    "selected_on_validation": "LightGBM (Gamma)"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "severity_used": "LightGBM (Gamma)",
+  "large_claim_loading_from_train": 1.2568,
+  "GLM tariff": {
+    "balance_factor_from_train": 0.744,
+    "test_loss_ratio_attritional": 1.0099,
+    "test_loss_ratio_total_with_loading": 1.3254,
+    "lorenz_gini_capped_cost": 0.2267,
+    "mean_attritional_pure_premium": 124.22,
+    "mean_total_pure_premium": 156.13
+  },
+  "LightGBM tariff": {
+    "balance_factor_from_train": 0.741,
+    "test_loss_ratio_attritional": 1.0083,
+    "test_loss_ratio_total_with_loading": 1.3232,
+    "lorenz_gini_capped_cost": 0.2836,
+    "mean_attritional_pure_premium": 124.43,
+    "mean_total_pure_premium": 156.39
+  },
+  "test_large_claim_excess_share": 0.3937,
+  "gini_gain_lgbm_vs_glm": [
+    0.0569,
+    0.0413,
+    0.0766
+  ],
+  "double_lift_capped": [
+    {
+      "bucket": 1,
+      "loss_ratio_a": 0.433,
+      "loss_ratio_b": 0.889
+    },
+    {
+      "bucket": 2,
+      "loss_ratio_a": 0.683,
+      "loss_ratio_b": 0.973
+    },
+    {
+      "bucket": 3,
+      "loss_ratio_a": 0.887,
+      "loss_ratio_b": 1.12
+    },
+    {
+      "bucket": 4,
+      "loss_ratio_a": 0.849,
+      "loss_ratio_b": 0.984
+    },
+    {
+      "bucket": 5,
+      "loss_ratio_a": 1.013,
+      "loss_ratio_b": 1.093
+    },
+    {
+      "bucket": 6,
+      "loss_ratio_a": 1.048,
+      "loss_ratio_b": 1.061
+    },
+    {
+      "bucket": 7,
+      "loss_ratio_a": 1.105,
+      "loss_ratio_b": 1.048
+    },
+    {
+      "bucket": 8,
+      "loss_ratio_a": 1.106,
+      "loss_ratio_b": 0.975
+    },
+    {
+      "bucket": 9,
+      "loss_ratio_a": 1.606,
+      "loss_ratio_b": 1.272
+    },
+    {
+      "bucket": 10,
+      "loss_ratio_a": 1.487,
+      "loss_ratio_b": 0.821
+    }
+  ]
+}
